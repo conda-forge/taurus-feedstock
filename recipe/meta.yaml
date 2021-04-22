@@ -15,8 +15,8 @@ build:
 
 requirements:
   run:
-    - {{ pin_subpackage('taurus-core', max_pin="x.x.x.x") }}
-    - {{ pin_subpackage('taurus-qt', max_pin="x.x.x.x") }}
+    - {{ pin_subpackage('taurus-core', exact=True) }}
+    - {{ pin_subpackage('taurus-qt', exact=True) }}
 
 outputs:
   - name: taurus-core
@@ -55,7 +55,7 @@ outputs:
         - python >=3.6
       run:
         - python >=3.6
-        - {{ pin_subpackage('taurus-core', max_pin="x.x.x.x") }}
+        - {{ pin_subpackage('taurus-core', exact=True) }}
         - pyqt
         - ply >=2.3
         - lxml >=2.1
