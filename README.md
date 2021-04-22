@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/taurus-feedstoc
 
 Summary: A framework for scientific/industrial CLIs and GUIs
 
-Development: https://github.com/taurus-org/taurus
+Development: https://gitlab.com/taurus-org/taurus
 
 Documentation: http://taurus-scada.org
 
