@@ -1,5 +1,5 @@
 {% set name = "taurus" %}
-{% set version = "4.7.0" %}
+{% set version = "4.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5329036608b94444f3512c89d493092fb658d069bcd4d1f82f393e70fdefc3d9
+  sha256: b83055224f7b9b5bcb30463f93da4f692f43875248409ea36990c4928141e237
 
 build:
   number: 0
@@ -15,8 +15,8 @@ build:
 
 requirements:
   run:
-    - {{ pin_subpackage('taurus-core', max_pin="x.x.x.x") }}
-    - {{ pin_subpackage('taurus-qt', max_pin="x.x.x.x") }}
+    - {{ pin_subpackage('taurus-core', exact=True) }}
+    - {{ pin_subpackage('taurus-qt', exact=True) }}
 
 outputs:
   - name: taurus-core
@@ -55,7 +55,7 @@ outputs:
         - python >=3.6
       run:
         - python >=3.6
-        - {{ pin_subpackage('taurus-core', max_pin="x.x.x.x") }}
+        - {{ pin_subpackage('taurus-core', exact=True) }}
         - pyqt
         - ply >=2.3
         - lxml >=2.1
@@ -77,7 +77,7 @@ about:
     It supports multiple control systems or data sources: Tango, EPICS,...
     New control system libraries can be integrated through plugins.
   doc_url: http://taurus-scada.org
-  dev_url: https://github.com/taurus-org/taurus
+  dev_url: https://gitlab.com/taurus-org/taurus
 
 extra:
   recipe-maintainers:
