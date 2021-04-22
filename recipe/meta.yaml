@@ -77,7 +77,7 @@ about:
     It supports multiple control systems or data sources: Tango, EPICS,...
     New control system libraries can be integrated through plugins.
   doc_url: http://taurus-scada.org
-  dev_url: https://github.com/taurus-org/taurus
+  dev_url: https://gitlab.com/taurus-org/taurus
 
 extra:
   recipe-maintainers:
