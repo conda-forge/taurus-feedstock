@@ -35,6 +35,7 @@ outputs:
         - future
         - numpy >=1.1
         - pint >=0.8
+        - setuptools
     test:
       imports:
         - taurus
