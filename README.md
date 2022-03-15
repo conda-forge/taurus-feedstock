@@ -5,7 +5,7 @@ Home: http://www.taurus-scada.org
 
 Package license: LGPL-3.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/taurus-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/taurus-feedstock/blob/main/LICENSE.txt)
 
 Summary: A framework for scientific/industrial CLIs and GUIs
 
@@ -25,8 +25,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11717&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/taurus-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=11717&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/taurus-feedstock?branchName=main">
       </a>
     </td>
   </tr>
