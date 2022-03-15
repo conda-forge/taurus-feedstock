@@ -34,6 +34,7 @@ outputs:
         - click
         - future
         - numpy >=1.1
+        - packaging
         - pint >=0.8
         - setuptools
     test:
