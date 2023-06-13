@@ -1,11 +1,11 @@
-About taurus
-============
+About taurus-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/taurus-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.taurus-scada.org
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/taurus-feedstock/blob/main/LICENSE.txt)
 
 Summary: A framework for scientific/industrial CLIs and GUIs
 
