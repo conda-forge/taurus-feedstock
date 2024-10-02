@@ -10,7 +10,7 @@ source:
   sha256: 6a9f7bbb785e7d00e0d4d463810a4da1ff9648fafa443c9306f7057c86c95c90
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -29,10 +29,11 @@ outputs:
       host:
         - python >=3.6
         - pip
+        - setuptools
       run:
         - python >=3.6
         - click
-        - numpy >=1.1
+        - numpy >=1.1,<2.0
         - packaging
         - pint >=0.8
         - setuptools
