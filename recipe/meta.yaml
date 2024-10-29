@@ -84,5 +84,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - ovallcorba
     - beenje
     - cpascual
