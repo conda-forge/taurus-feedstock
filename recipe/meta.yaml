@@ -10,7 +10,7 @@ source:
   sha256: 80c6cf07a04d4e7af8508c1f1a106893bdce0313eb338a68ab0d0117eead5523
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -60,6 +60,7 @@ outputs:
         - {{ pin_subpackage('taurus-core', exact=True) }}
         - pyqt
         - pyqtwebengine
+        - pyqtwebkit
         - ply >=2.3
         - lxml >=2.1
         - guiqwt >=3
