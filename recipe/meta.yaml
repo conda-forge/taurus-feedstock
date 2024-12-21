@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 80c6cf07a04d4e7af8508c1f1a106893bdce0313eb338a68ab0d0117eead5523
 
 build:
-  number: 1
+  number: 2
   noarch: python
 
 requirements:
@@ -27,11 +27,11 @@ outputs:
         - taurus = taurus.cli:main
     requirements:
       host:
-        - python >=3.6
+        - python {{ python_min }}
         - pip
         - setuptools
       run:
-        - python >=3.6
+        - python >={{ python_min }}
         - click
         - numpy >=1.1
         - packaging
@@ -54,9 +54,9 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.6
+        - python {{ python_min }}
       run:
-        - python >=3.6
+        - python >={{ python_min }}
         - {{ pin_subpackage('taurus-core', exact=True) }}
         - pyqt
         - pyqtwebengine
@@ -65,6 +65,8 @@ outputs:
         - lxml >=2.1
         - guiqwt >=3
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - taurus.qt
       commands:
