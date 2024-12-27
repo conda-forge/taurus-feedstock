@@ -1,16 +1,16 @@
 {% set name = "taurus" %}
-{% set version = "5.2.0" %}
+{% set version = "5.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 80c6cf07a04d4e7af8508c1f1a106893bdce0313eb338a68ab0d0117eead5523
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 132a96542e76fb5af279423fb0e1094621f10aef3d8a59780dcb0709ca144813
 
 build:
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
@@ -27,13 +27,13 @@ outputs:
         - taurus = taurus.cli:main
     requirements:
       host:
-        - python >=3.6
+        - python {{ python_min }}
         - pip
         - setuptools
       run:
-        - python >=3.6
+        - python >={{ python_min }}
         - click
-        - numpy >=1.1
+        - numpy >=1.16
         - packaging
         - pint >=0.8
         - setuptools
@@ -54,9 +54,9 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.6
+        - python {{ python_min }}
       run:
-        - python >=3.6
+        - python >={{ python_min }}
         - {{ pin_subpackage('taurus-core', exact=True) }}
         - pyqt
         - pyqtwebengine
