@@ -27,11 +27,11 @@ outputs:
         - taurus = taurus.cli:main
     requirements:
       host:
-        - python >=3.6
+        - python {{ python_min }}
         - pip
         - setuptools
       run:
-        - python >=3.6
+        - python >={{ python_min }}
         - click
         - numpy >=1.16
         - packaging
@@ -54,9 +54,9 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.6
+        - python {{ python_min }}
       run:
-        - python >=3.6
+        - python >={{ python_min }}
         - {{ pin_subpackage('taurus-core', exact=True) }}
         - pyqt
         - pyqtwebengine
