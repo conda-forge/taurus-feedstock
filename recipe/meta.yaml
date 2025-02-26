@@ -1,5 +1,5 @@
 {% set name = "taurus" %}
-{% set version = "5.2.2" %}
+{% set version = "5.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 100aa55ddb18aa7f812ebbff176f91305c682b25f8a5bab393a6c061b90c38d1
+  sha256: 9eeac1e0bdee91519c224b2bd4547ba33fdd746896ba70be4118a5766da1b57a
 
 build:
   number: 0
