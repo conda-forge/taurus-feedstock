@@ -38,6 +38,8 @@ outputs:
         - pint >=0.8
         - setuptools
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - taurus
         - taurus.core
@@ -65,6 +67,8 @@ outputs:
         - lxml >=2.1
         - guiqwt >=3
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - taurus.qt
       commands:
