@@ -40,6 +40,7 @@ outputs:
     test:
       requires:
         - python {{ python_min }}
+        - pip
       imports:
         - taurus
         - taurus.core
@@ -48,8 +49,6 @@ outputs:
       commands:
         - pip check
         - taurus --help
-      requires:
-        - pip
 
   - name: taurus-qt
     build:
