@@ -1,5 +1,5 @@
 {% set name = "taurus" %}
-{% set version = "5.2.3" %}
+{% set version = "5.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9eeac1e0bdee91519c224b2bd4547ba33fdd746896ba70be4118a5766da1b57a
+  sha256: 07db07af9c37d7d84e550d2f80ec8dd81c388911c117a94c119c905c30249330
 
 build:
   number: 0
@@ -38,6 +38,9 @@ outputs:
         - pint >=0.8
         - setuptools
     test:
+      requires:
+        - python {{ python_min }}
+        - pip
       imports:
         - taurus
         - taurus.core
@@ -46,8 +49,6 @@ outputs:
       commands:
         - pip check
         - taurus --help
-      requires:
-        - pip
 
   - name: taurus-qt
     build:
@@ -65,6 +66,8 @@ outputs:
         - lxml >=2.1
         - guiqwt >=3
     test:
+      requires:
+        - python {{ python_min }}
       imports:
         - taurus.qt
       commands:
