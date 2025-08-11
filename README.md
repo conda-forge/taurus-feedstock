@@ -3,7 +3,7 @@ About taurus-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/taurus-feedstock/blob/main/LICENSE.txt)
 
-Home: http://www.taurus-scada.org
+Home: http://www.taurus-scada.org/
 
 Package license: LGPL-3.0-or-later
 
@@ -11,13 +11,12 @@ Summary: A framework for scientific/industrial CLIs and GUIs
 
 Development: https://gitlab.com/taurus-org/taurus
 
-Documentation: http://taurus-scada.org
+Documentation: http://taurus-scada.org/
 
 Taurus is a python framework for control and data
 acquisition CLIs and GUIs in scientific/industrial environments.
 It supports multiple control systems or data sources: Tango, EPICS,...
 New control system libraries can be integrated through plugins.
-
 
 Current build status
 ====================
