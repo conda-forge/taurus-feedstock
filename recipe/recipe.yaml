@@ -56,7 +56,7 @@ outputs:
   - package:
       name: taurus-qt
     build:
-      noarch: python
+      noarch: generic
     requirements:
       run:
         - python >=${{ python_min }}
@@ -83,7 +83,7 @@ outputs:
   - package:
       name: taurus
     build:
-      noarch: python
+      noarch: generic
     requirements:
       run:
         - ${{ pin_subpackage('taurus-core', exact=True) }}
