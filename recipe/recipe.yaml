@@ -79,7 +79,7 @@ outputs:
           - taurus check-deps
         requirements:
           run:
-            - python ${{ python_min }}
+            - python ${{ python_min }}.*
   - package:
       name: taurus
     build:
@@ -101,7 +101,7 @@ outputs:
           - taurus check-deps
         requirements:
           run:
-            - python ${{ python_min }}
+            - python ${{ python_min }}.*
 
 about:
   license: LGPL-3.0-or-later
