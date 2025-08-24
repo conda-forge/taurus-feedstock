@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: taurus
-  version: 5.2.4
+  version: "5.3.0"
 
 recipe:
   name: taurus-split
@@ -10,10 +10,10 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 07db07af9c37d7d84e550d2f80ec8dd81c388911c117a94c119c905c30249330
+  sha256: 1a7c07944828ce0beab29986caa052910575a716b5b0e67d6ead67281e096b63
 
 build:
-  number: 1
+  number: 0
   noarch: python
 
 outputs:
