@@ -43,14 +43,14 @@ Current release info
 Installing taurus
 =================
 
-Installing `taurus` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `taurus` from the `conda-forge/label/taurus_dev` channel can be achieved by adding `conda-forge/label/taurus_dev` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/taurus_dev
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `taurus, taurus-core, taurus-qt` can be installed with `conda`:
+Once the `conda-forge/label/taurus_dev` channel has been enabled, `taurus, taurus-core, taurus-qt` can be installed with `conda`:
 
 ```
 conda install taurus taurus-core taurus-qt
@@ -65,26 +65,26 @@ mamba install taurus taurus-core taurus-qt
 It is possible to list all of the versions of `taurus` available on your platform with `conda`:
 
 ```
-conda search taurus --channel conda-forge
+conda search taurus --channel conda-forge/label/taurus_dev
 ```
 
 or with `mamba`:
 
 ```
-mamba search taurus --channel conda-forge
+mamba search taurus --channel conda-forge/label/taurus_dev
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search taurus --channel conda-forge
+mamba repoquery search taurus --channel conda-forge/label/taurus_dev
 
 # List packages depending on `taurus`:
-mamba repoquery whoneeds taurus --channel conda-forge
+mamba repoquery whoneeds taurus --channel conda-forge/label/taurus_dev
 
 # List dependencies of `taurus`:
-mamba repoquery depends taurus --channel conda-forge
+mamba repoquery depends taurus --channel conda-forge/label/taurus_dev
 ```
 
 
