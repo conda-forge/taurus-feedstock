@@ -13,7 +13,7 @@ source:
   sha256: 32f74a3ea9c2be659cd8fe43e115e8d1244749fd43e0bd82192616d5dabf8029
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 outputs:
@@ -36,7 +36,6 @@ outputs:
         - numpy >=1.16
         - packaging
         - pint >=0.8
-        - setuptools <81
     tests:
       - python:
           imports:
